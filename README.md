@@ -1,57 +1,136 @@
-# 🚀 Getting started with Strapi
+<img src="https://cdn.discordapp.com/attachments/896508539244281866/972774461629677589/mock.png" alt="Projekt graficzny strony" width="100%"/>
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
-### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+<div align="center">
+     <img alt="Components Preview (Chromatic)" src="https://github.com/ElektronPlus/school-website/actions/workflows/chromatic.yml/badge.svg?branch=main"/>
+     <img alt="Vercel status" src="https://img.shields.io/github/deployments/ElektronPlus/school-website/production?label=vercel&logo=vercel&logoColor=white">
+ </div>
+<h1 align="center">🎒 School Website Starter</h1>
+  <p align="center">
+  Accessible and extremely user-friendly website template for schools, built on fun and modern stack.
+</p>
 
-```
-npm run develop
-# or
-yarn develop
-```
+## Folder Structure
+- **`📁 apps`**
+  - **`📁 backend`**: headless CMS (API) that uses [Strapi](https://strapi.com/).
+  - **`📁 frontend`**
+    - **`📁 queries`**: GraphQL queries. Just create a `.graphql` that you will want to use.
+    - **`📁 generated`**: Generated GraphQL queries with [GraphQL Code Generator](https://www.graphql-code-generator.com/). Runs automatically while developing. You import types and queries from there (not from `📁 queries`!)
+    - **`📁 stories`**: [Storybook stories.](https://storybook.js.org/docs/react/writing-stories/introduction/)
+    - **`📁 pages`**: [Next.js pages](https://nextjs.org/docs/basic-features/pages).
+    - **`📁 public`**: [Next.js static file serving](https://nextjs.org/docs/basic-features/static-file-serving).
+    - **`📁 styles`**: Global CSS Styles. It's better to use CSS modules (`component.module.css` in `📁 components`
+    - **`📁 lib`**: Libraries wrappers (such as for Apollo Client) and configs.
+    - **`📁 components`**: React components and their styles. There's also a [Next.js Layout](https://nextjs.org/docs/basic-features/layouts)
+    
+## Features
+- **⚠️ Alerts**: customizable information on top of the page
+- **📅 Substitusions**: inform about changes in a timetable
+- **🔎 Search Bar**: let users quickly find what they're looking for
+- **✨ Rich Footer**: customizable social media icons, e-mail, copyright, related links
 
-### `start`
+## Technology
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
+![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-6c5fc7?style=for-the-badge&logo=sentry&logoColor=white)
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+| Technology | Description |
+|------------|-------------|
+| [**Doppler**](https://www.doppler.com/) | Doppler streamlines secrets management with a beautiful and intuitive dashboard, powerful CLI, and integrations for syncing secrets across development environments, cloud providers, hosting platforms, CI/CD tools, Docker, Kubernetes, and Terraform. |
 
-```
-npm run start
-# or
-yarn start
-```
+### Front-end
 
-### `build`
+| Technology | Description |
+|------------|-------------|
+| [**Next.js**](https://nextjs.org/) | The React Framework for Production. Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed. |
+| [**React**](https://reactjs.org/) | The most popular JavaScript library for building user interfaces. |
+| [**TypeScript**](https://www.typescriptlang.org/) | TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. |
+| [**Storybook**](https://storybook.js.org/) | Tool for building UI components and pages in isolation. It streamlines UI development, testing, and documentation. |
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+#### UI Libs
+| Library | Description |
+|---------|-------------|
+| [**Chakra UI**](https://chakra-ui.com/) | Chakra UI is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications. We use templates from [**Chakra Templates**](https://chakra-templates.dev/). |
+| [**React Masonry CSS**](https://github.com/paulcollett/react-masonry-css) | A Masonry component leveraging CSS and native React rendering, for fast, responsive masonry layouts. |
+| [**React Accessible Headings**](https://github.com/springload/react-accessible-headings) | Makes it easier to keep heading levels semantic and accessible (WCAG) |
 
-```
-npm run build
-# or
-yarn build
-```
+#### Fetching
+| Technology | Description |
+|------------|-------------|
+| [**GraphQL**](https://graphql.org/) | Main way to fetch data from the Strapi API. Gives us automatic TypeScript support thanks to [**GraphQL Code Generator**](https://www.graphql-code-generator.com/). We use [**Apollo Client**](https://www.apollographql.com/docs/) |
+| **REST API** | REST is rarely used, but sometimes it works out better with Strapi plugins, for example Navigation. External developers also might want to prefer use it in their projects. [**See documentation »**](https://github.com/ElektronPlus/school-website#api) |
 
-## ⚙️ Deployment
+### Back-end
+| Technology | Description |
+|------------|-------------|
+| [**Strapi**](https://strapi.io) | Design APIs fast, manage content easily. Strapi is the leading open-source headless CMS. It’s 100% JavaScript, fully customizable and developer-first. |
+| [**MySQL**](https://www.mysql.com/) | Database with PhpMyAdmin. Might be changed to PostgreSQL. |
+| [**Meilisearch**](https://www.meilisearch.com/) | Meilisearch is a RESTful search API. It aims to be a ready-to-go solution for everyone who wants a fast and relevant search experience for their end-users ⚡️🔎 |
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+### Analytics
+| Technology | Description |
+|------------|-------------|
+| [**Sentry**](https://sentry.io/) | From error tracking to performance monitoring, developers can see what actually matters, solve quicker, and learn continuously about their applications - from the frontend to the backend. |
 
-## 📚 Learn more
+### Strapi Plugins
+- [**SEO**](https://market.strapi.io/plugins/@strapi-plugin-seo)
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+## Links
+- [🖼 Figma Project](https://www.figma.com/file/q12uPmoO5j5LdxRQhHIIGe/Elektronik?node-id=0%3A1)
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+## API
+API is based on [**Strapi**](https://strapi.io/) and it's publicly available - you're free to use it in your project! It's recommended to use GraphQL API.
+
+Here are some REST API routes:
+
+- [**strapi.elektronplus.pl/api**](https://strapi.elektronplus.pl/api)
+  - [/substitusions](https://strapi.elektronplus.pl/api/substitusions)
+  - [/articles](https://strapi.elektronplus.pl/api/aritcles)
+  - [/alerts](https://strapi.elektronplus.pl/api/alerts)
+  - [/pages](https://strapi.elektronplus.pl/api/pages)
+
+
+## License & Open-Source
+
+- The project is open-sourced and available on [**⚖ MIT License**](https://github.com/ElektronPlus/school-website/blob/main/LICENSE).
+- We offer free assistance with implementation as needed for schools and educational organizations. **Contact Us! »**
+- You noticed a mistake or want to suggest something? [**Create an Issue »**](https://github.com/ElektronPlus/school-website/issues) or **Contact Us! »**
+
+
+## Infrastructure
+
+This section explains this specific instance infrastructure. You're free to use anything you want.
+
+| Type | Infrastructure | Instance | Description |
+|-------|-----------------|----------|------------
+| Frontend | [**▲ Vercel**](https://vercel.com/?utm_source=ElektronPlus&utm_campaign=oss) | [dev.elektronplus.pl](https://dev.elektronplus.pl) | Website |
+| Backend | **Self-hosted VPS** | [strapi.elektronplus.pl](https://strapi.elektronplus.pl/) | Strapi (Headless CMS), MySQL Database |
+| Meilisearch | [**Koyeb**](https://www.koyeb.com/) | [zseis-zgora-meilisearch-konhi.koyeb.app](https://zseis-zgora-meilisearch-konhi.koyeb.app/) | Search Engine |
+| Developer-only | [**Chromatic**](https://www.chromatic.com/) | [**See components »**](https://main--6284fb53d2efc2004a5d01dd.chromatic.com/) | Storybook |
+
+<div align="center">
+
+---
+  
+<a href="https://vercel.com/?utm_source=ElektronPlus&utm_campaign=oss"><img alt="Powered by Vercel" src="https://user-images.githubusercontent.com/61631665/169044158-83a61052-64a9-443d-8676-bddba0e45c7e.png"></a>
+<br>
+ 
+  
+This project is proudly powered by Vercel - a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database that provide a frictionless developer experience to take care of the hard things: deploying instantly, scaling automatically, and serving personalized content around the globe.
+  
+  <a href="https://vercel.com/?utm_source=ElektronPlus&utm_campaign=oss"><h3>Interested? Check ▲ Vercel! »</h3></a>
+  
+
+</div>
+
+<br>

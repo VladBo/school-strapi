@@ -1,32 +1,21 @@
 {
-  "name": "school-app-backend",
-  "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "name": "school-website",
+  "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test",
+    "build-storybook": "build-storybook --config-dir apps/frontend/.storybook"
   },
-  "devDependencies": {},
-  "dependencies": {
-    "@strapi/plugin-i18n": "4.5.2",
-    "@strapi/plugin-users-permissions": "4.5.2",
-    "@strapi/strapi": "4.5.2",
-    "@types/lodash": "^4.14.190",
-    "@types/mime-types": "^2.1.1",
-    "mysql": "^2.18.1"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "ce246180-76ed-43fd-865d-15a5e0d50a52"
-  },
-  "engines": {
-    "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+  "private": true,
+  "devDependencies": {
+    "@nrwl/cli": "^15.2.4",
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/workspace": "^15.2.4",
+    "nx": "^15.2.4",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3",
+    "webpack": "^5.75.0"
+  }
 }

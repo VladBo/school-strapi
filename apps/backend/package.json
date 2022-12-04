@@ -1,0 +1,32 @@
+{
+  "name": "school-app-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.5.2",
+    "@strapi/plugin-users-permissions": "4.5.2",
+    "@strapi/strapi": "4.5.2",
+    "@types/lodash": "^4.14.190",
+    "@types/mime-types": "^2.1.1",
+    "mysql": "^2.18.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "ce246180-76ed-43fd-865d-15a5e0d50a52"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
