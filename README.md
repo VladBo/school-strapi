@@ -1,14 +1,7 @@
-<img src="https://cdn.discordapp.com/attachments/896508539244281866/972774461629677589/mock.png" alt="Projekt graficzny strony" width="100%"/>
-
-
-
-<div align="center">
-     <img alt="Components Preview (Chromatic)" src="https://github.com/ElektronPlus/school-website/actions/workflows/chromatic.yml/badge.svg?branch=main"/>
-     <img alt="Vercel status" src="https://img.shields.io/github/deployments/ElektronPlus/school-website/production?label=vercel&logo=vercel&logoColor=white">
- </div>
 <h1 align="center">🎒 School Website Starter</h1>
   <p align="center">
   Accessible and extremely user-friendly website template for schools, built on fun and modern stack.
+  Forked from https://github.com/ElektronPlus/school-website.
 </p>
 
 ## Folder Structure
@@ -23,12 +16,6 @@
     - **`📁 styles`**: Global CSS Styles. It's better to use CSS modules (`component.module.css` in `📁 components`
     - **`📁 lib`**: Libraries wrappers (such as for Apollo Client) and configs.
     - **`📁 components`**: React components and their styles. There's also a [Next.js Layout](https://nextjs.org/docs/basic-features/layouts)
-    
-## Features
-- **⚠️ Alerts**: customizable information on top of the page
-- **📅 Substitusions**: inform about changes in a timetable
-- **🔎 Search Bar**: let users quickly find what they're looking for
-- **✨ Rich Footer**: customizable social media icons, e-mail, copyright, related links
 
 ## Technology
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
@@ -40,10 +27,6 @@
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![Sentry](https://img.shields.io/badge/Sentry-6c5fc7?style=for-the-badge&logo=sentry&logoColor=white)
-
-| Technology | Description |
-|------------|-------------|
-| [**Doppler**](https://www.doppler.com/) | Doppler streamlines secrets management with a beautiful and intuitive dashboard, powerful CLI, and integrations for syncing secrets across development environments, cloud providers, hosting platforms, CI/CD tools, Docker, Kubernetes, and Terraform. |
 
 ### Front-end
 
@@ -73,64 +56,3 @@
 | [**Strapi**](https://strapi.io) | Design APIs fast, manage content easily. Strapi is the leading open-source headless CMS. It’s 100% JavaScript, fully customizable and developer-first. |
 | [**MySQL**](https://www.mysql.com/) | Database with PhpMyAdmin. Might be changed to PostgreSQL. |
 | [**Meilisearch**](https://www.meilisearch.com/) | Meilisearch is a RESTful search API. It aims to be a ready-to-go solution for everyone who wants a fast and relevant search experience for their end-users ⚡️🔎 |
-
-### Analytics
-| Technology | Description |
-|------------|-------------|
-| [**Sentry**](https://sentry.io/) | From error tracking to performance monitoring, developers can see what actually matters, solve quicker, and learn continuously about their applications - from the frontend to the backend. |
-
-### Strapi Plugins
-- [**SEO**](https://market.strapi.io/plugins/@strapi-plugin-seo)
-
-## Links
-- [🖼 Figma Project](https://www.figma.com/file/q12uPmoO5j5LdxRQhHIIGe/Elektronik?node-id=0%3A1)
-
----
-
-
-## API
-API is based on [**Strapi**](https://strapi.io/) and it's publicly available - you're free to use it in your project! It's recommended to use GraphQL API.
-
-Here are some REST API routes:
-
-- [**strapi.elektronplus.pl/api**](https://strapi.elektronplus.pl/api)
-  - [/substitusions](https://strapi.elektronplus.pl/api/substitusions)
-  - [/articles](https://strapi.elektronplus.pl/api/aritcles)
-  - [/alerts](https://strapi.elektronplus.pl/api/alerts)
-  - [/pages](https://strapi.elektronplus.pl/api/pages)
-
-
-## License & Open-Source
-
-- The project is open-sourced and available on [**⚖ MIT License**](https://github.com/ElektronPlus/school-website/blob/main/LICENSE).
-- We offer free assistance with implementation as needed for schools and educational organizations. **Contact Us! »**
-- You noticed a mistake or want to suggest something? [**Create an Issue »**](https://github.com/ElektronPlus/school-website/issues) or **Contact Us! »**
-
-
-## Infrastructure
-
-This section explains this specific instance infrastructure. You're free to use anything you want.
-
-| Type | Infrastructure | Instance | Description |
-|-------|-----------------|----------|------------
-| Frontend | [**▲ Vercel**](https://vercel.com/?utm_source=ElektronPlus&utm_campaign=oss) | [dev.elektronplus.pl](https://dev.elektronplus.pl) | Website |
-| Backend | **Self-hosted VPS** | [strapi.elektronplus.pl](https://strapi.elektronplus.pl/) | Strapi (Headless CMS), MySQL Database |
-| Meilisearch | [**Koyeb**](https://www.koyeb.com/) | [zseis-zgora-meilisearch-konhi.koyeb.app](https://zseis-zgora-meilisearch-konhi.koyeb.app/) | Search Engine |
-| Developer-only | [**Chromatic**](https://www.chromatic.com/) | [**See components »**](https://main--6284fb53d2efc2004a5d01dd.chromatic.com/) | Storybook |
-
-<div align="center">
-
----
-  
-<a href="https://vercel.com/?utm_source=ElektronPlus&utm_campaign=oss"><img alt="Powered by Vercel" src="https://user-images.githubusercontent.com/61631665/169044158-83a61052-64a9-443d-8676-bddba0e45c7e.png"></a>
-<br>
- 
-  
-This project is proudly powered by Vercel - a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database that provide a frictionless developer experience to take care of the hard things: deploying instantly, scaling automatically, and serving personalized content around the globe.
-  
-  <a href="https://vercel.com/?utm_source=ElektronPlus&utm_campaign=oss"><h3>Interested? Check ▲ Vercel! »</h3></a>
-  
-
-</div>
-
-<br>
