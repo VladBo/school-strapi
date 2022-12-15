@@ -23,7 +23,7 @@ services:
       - ./apps/backend/config:/opt/app/config
       - ./apps/backend/src:/opt/app/src
       - ./apps/backend/package.json:/opt/package.json
-      - ./apps/backend/yarn.lock:/opt/yarn.lock
+      - ./apps/backend/package-lock.json:/opt/package-lock.json
       - ./apps/backend/.env:/opt/app/.env
     ports:
       - '${STRAPI_PORT}:${STRAPI_PORT}'

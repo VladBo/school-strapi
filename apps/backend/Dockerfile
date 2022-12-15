@@ -5,14 +5,15 @@ RUN apk update && apk add build-base gcc autoconf automake zlib-dev libpng-dev n
 
 WORKDIR /opt/
 
-COPY ./package.json ./yarn.lock ./
+COPY ./package.json ./package-lock.json ./
 ENV PATH /opt/node_modules/.bin:$PATH
-RUN yarn config set network-timeout 600000 -g && yarn install
+RUN npm install --legacy-peer-deps
 WORKDIR /opt/app
 COPY ./ .
 
-RUN yarn build
+RUN npm run build
 
-EXPOSE 1337
+EXPOSE ${PORT}
 
-CMD ["yarn", "develop"]
+# on production: ["npm", "run", "start"]
+CMD ["npm", "run", "develop"]
